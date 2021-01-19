@@ -6,7 +6,7 @@
 /*   By: amdedieu <amdedieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 14:33:48 by amdedieu          #+#    #+#             */
-/*   Updated: 2019/10/22 14:25:31 by amdedieu         ###   ########.fr       */
+/*   Updated: 2021/01/19 04:08:37 by amdedieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,10 @@ int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
 char			*ft_itoa(int n);
+int				ft_exit(int ret, int n, ...);
+char			*ft_itoa_base(unsigned int n, char *base);
+void			ft_memdel(void **ap);
+char			*ft_strjoin_free(char const *s1, const char *s2);
 void			*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void			*ft_memmove(void *dest, const void *src, size_t n);
 void			*ft_memchr(const void *s, int c, size_t n);
@@ -55,6 +59,12 @@ void			ft_putstr_fd(char *s, int fd);
 char			**ft_split(const char *str, char c);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strdup(const char *s);
+char			*ft_str_toupper(char *str);
+char			*ft_itoa_unsigned(unsigned int n);
+char			*ft_itoa_address(unsigned long long int n);
+char			*ft_strjoin_free(char const *s1, char const *s2);
+char			*ft_strjoin_free1(char const *s1, char const *s2);
+char			*ft_strjoin_free2(char const *s1, char const *s2);
 char			*ft_strjoin(char const *s1, char const *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t maxlen);
 size_t			ft_strlcpy(char *dest, const char *src, size_t size);

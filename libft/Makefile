@@ -6,7 +6,7 @@
 #    By: amdedieu <amdedieu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/20 19:58:34 by amdedieu          #+#    #+#              #
-#    Updated: 2019/10/20 20:35:35 by amdedieu         ###   ########.fr        #
+#    Updated: 2021/01/19 04:09:18 by amdedieu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ NAME                =   libft.a
 CC                  =   gcc -Wall -Wextra -Werror
 
 SRC            =        ft_atoi.c               \
+						ft_exit.c 				\
 						ft_bzero.c              \
 						ft_calloc.c             \
 						ft_isalnum.c            \
@@ -23,10 +24,13 @@ SRC            =        ft_atoi.c               \
 						ft_isdigit.c            \
 						ft_isprint.c            \
 						ft_itoa.c               \
+						ft_itoa_base.c 			\
+						ft_itoa_address.c 		\
 						ft_memccpy.c            \
 						ft_memmove.c            \
 						ft_memchr.c             \
 						ft_memcmp.c             \
+						ft_memdel.c 			\
 						ft_memcpy.c             \
 						ft_memset.c             \
 						ft_putchar_fd.c         \
@@ -35,6 +39,11 @@ SRC            =        ft_atoi.c               \
 						ft_putstr_fd.c          \
 						ft_split.c              \
 						ft_strchr.c             \
+						ft_strjoin_free.c 		\
+						ft_strjoin_free1.c 		\
+						ft_strjoin_free2.c 		\
+						ft_str_toupper.c 		\
+						ft_itoa_unsigned.c 		\
 						ft_strdup.c             \
 						ft_strjoin.c            \
 						ft_strlcat.c            \
