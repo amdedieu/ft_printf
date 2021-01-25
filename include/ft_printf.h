@@ -6,7 +6,7 @@
 /*   By: amdedieu <amdedieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 16:38:09 by amdedieu          #+#    #+#             */
-/*   Updated: 2021/01/19 05:47:37 by amdedieu         ###   ########.fr       */
+/*   Updated: 2021/01/25 17:48:34 by amdedieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # define RIGHT 0
 # define CONVSET "cspdiuxX%"
 # define HEXA "0123456789abcdef"
+# define FLAGS ".0-*"
 
 typedef	struct		s_set
 {
@@ -33,20 +34,20 @@ typedef	struct		s_set
 
 } 					t_set;
 
-int			ft_hexadecimal_upper_pf(va_list arg, t_set *set);
-int			ft_hexadecimal_pf(va_list arg, t_set *set);
-int			ft_integer_pf(va_list args, t_set *set);
+int			ft_hexadecimal_upper(va_list arg, t_set *set);
+int			ft_hexadecimal(va_list arg, t_set *set);
+int			ft_integer(va_list args, t_set *set);
 t_set		*ft_parse(const char *str, va_list arg);
-int			ft_address_pf(va_list args, t_set *set);
-int			ft_unsigned_pf(va_list arg, t_set *set);
-int			ft_decimal_pf(va_list args, t_set *set);
+int			ft_address(va_list args, t_set *set);
+int			ft_unsigned(va_list arg, t_set *set);
+int			ft_decimal(va_list args, t_set *set);
 char		*ft_width_right(t_set *set, char *str);
-int			ft_percent_pf(va_list arg, t_set *set);
+int			ft_percent(va_list arg, t_set *set);
 char		*ft_width_right(t_set *set, char *str);
 char		*ft_width_left(t_set *set, char *str);
 int			print_til_next_arg(const char  *str);
-int			ft_char_pf(va_list args, t_set *set);
-int			ft_str_pf(va_list args, t_set *set);
+int			ft_char(va_list args, t_set *set);
+int			ft_str(va_list args, t_set *set);
 char		*ft_width_nb(t_set *set, char *str);
 char		*ft_prec_nb(char *str, t_set *set);
 int			ft_ret(int ret, int nb_arg, ...);

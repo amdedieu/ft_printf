@@ -6,13 +6,13 @@
 /*   By: amdedieu <amdedieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 14:37:51 by amdedieu          #+#    #+#             */
-/*   Updated: 2021/01/19 04:02:41 by amdedieu         ###   ########.fr       */
+/*   Updated: 2021/01/22 03:12:05 by amdedieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "../include/ft_printf.h"
 
-int		ft_ret(int ret, int nb_arg, ...)
+int				ft_ret(int ret, int nb_arg, ...)
 {
 	va_list		args;
 	void		*tmp;
@@ -20,7 +20,7 @@ int		ft_ret(int ret, int nb_arg, ...)
 
 	i = 0;
 	va_start(args, nb_arg);
-	while(i < nb_arg)
+	while (i < nb_arg)
 	{
 		tmp = va_arg(args, void *);
 		ft_memdel(&tmp);
@@ -30,9 +30,9 @@ int		ft_ret(int ret, int nb_arg, ...)
 	return (ret);
 }
 
-int			ft_get_index(const char *str)
+int				ft_get_index(const char *str)
 {
-	int		i;
+	int			i;
 
 	i = 0;
 	while (*str)
@@ -45,10 +45,10 @@ int			ft_get_index(const char *str)
 	return (i);
 }
 
-int			ft_define_type(char c)
+int				ft_define_type(char c)
 {
-	int		i;
-	char	*value;
+	int			i;
+	char		*value;
 
 	i = 0;
 	value = ft_strdup(CONVSET);
